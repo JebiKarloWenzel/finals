@@ -1,0 +1,248 @@
+.map-area {
+  transition: transform 0.3s ease-in-out;
+}
+
+.map-area:hover {
+  transform: scale(1.2); /* You can adjust the scale factor as needed */
+}
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: center; /* Float the buttons side by side */
+
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+       body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 70px 0 0; /* Adjust the top padding to accommodate the fixed navbar */
+      background-image: url("istockphoto-941005318-612x612.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .navbar {
+      background-color: #000;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      height: 70px;
+      width: 99%;
+      position: fixed; /* Make the navbar fixed at the top of the page */
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-logo img {
+      max-height: 200px;
+      margin-right: 10px;
+    }
+
+    .navbar-buttons {
+      display: flex;
+    }
+
+    .navbar-button {
+      margin-left: 5px;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #555;
+      transition: transform 0.3s ease; /* Add a smooth transition effect on transform */
+    }
+
+    .navbar-button:hover {
+      transform: scale(1.2); /* Enlarge the button on hover */
+    }
+
+
+        /* Styles for the modal */
+      .modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #28797B; /* Change background color to white or your preferred color */
+  padding: 1000px;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 10000;
+}
+        }
+
+        .modal img {
+            max-width: 100%;
+            max-height: 180px;
+            margin-bottom: 10px;
+        }
+
+        .modal button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-top: 70px; /* Adjust the margin-top to prevent content from being hidden behind the fixed navbar */
+            text-align: center;
+        }
+    .map-container {
+    background-color: #transparent;
+    padding: 20px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    text-align: center;
+    margin: 0px auto;
+}
+
+.map-container img {
+    max-width: 100%;
+    height: auto;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out; /* Apply transition effect */
+}
+
+/* Additional styles for better appearance */
+.map-container img:hover {
+    box-shadow: 0 0 10px rgba(1, 1, 0); /* Customize the shadow color here */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.header h1 {
+    margin: 0;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 5px solid #333;
+    z-index: 1;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center;
+    align-items: center;
+    background-image: url('BG (2).jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000; /* Set the text color to white */
+}
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff0000; /* Set the close button color to red */
+}
+
+.popup-content {
+    text-align: left;
+}
+
+.popup-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.map-container {
+    text-align: center;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("f94774094cdb0632c80e94a27d4de239.gif");
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background */
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+        header {
+            background-color: #transparent;
+            padding: 20px 0;
+            color: #000;
+        }
+          p {
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color: rgba(255, 255, 255, 0.5); /* Set a background color for paragraphs */
+            color: #000000; /* Set the font color */
+            padding: 15px;
+            margin-bottom: 15px; /* Add space between paragraphs */
+            border-radius: 10px; /* Add rounded corners for a pleasing look */
+        }
+        main {
+            padding: 40px;
+        }
+         .styled-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .styled-button img {
+            max-width: 20%;
+            border: 0px solid #;
+            border-radius: 5px;
+            transition: transform 0.5s ease;
+        }
+
+        .styled-button:hover img {
+            transform: scale(1.8);
+        }

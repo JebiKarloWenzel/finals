@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Mosaic of Life v2</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <img src="Mosaic_Of_LIfe-removebg-preview.png" alt="Logo">
+        <h2>Welcome to The Mosaic of Life v2</h2>
+        <p>Get closer to nature with a click. Our wildlife-themed website is your ticket to exploring the extraordinary. Start your journey now</p>
+        <button onclick="continueAction()">Yes I am ready!</button>
+        <a href="EXIT.html"><button onclick="exitAction()">Not yet ready</button></a>
+    </div>
+     <script>
+        // Function to show the modal on page load
+        function showWelcomeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'block';
+        }
+
+        // Function to handle the "Continue" button click
+        function continueAction() {
+            alert('Welcome to the Mosaic of Life v2!');
+            closeModal();
+        }
+
+        // Function to handle the "Exit" button click
+        function exitAction() {
+            alert('Goodbye Thankyou.');
+            closeModal();  
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        // Attach the function to the onload event of the body
+        window.onload = showWelcomeModal;
+    </script>
+
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="LOGO NAVIGATOR.png" alt="Logo">
+        </div> 
+        <div class="navbar-buttons">
+            <a href="HOME.HTML" class="navbar-button">HOME</a>
+            <a href="CREATORS.HTML" class="navbar-button">CREATORS</a>
+            <a href="SUPPORT.html" class="navbar-button">SUPPORT</a>
+            <a href="REFERENCES.html" class="navbar-button">REFERENCES</a>
+        </div>
+    </div>
+ <br><br><br><br>
+     <br><br><br>
+      <br><br><br>
+       <br><br><br>
+        <br><br><br>
+         <br><br><br>
+          <br><br><br>
+     <header>
+        <br><br><br>
+        <h1>Welcome to Mosaic of Life </h1>
+        <p>Where Nature Unveils Its Splendor in the Philippines!</p>
+    </header>
+   <main style="padding: 20px; line-height: 1.6;">
+    <p style="font-weight: bold; font-size: 1.2em;">
+        Embark on a virtual journey through the lush landscapes and diverse ecosystems of the Philippines, a nation teeming with unparalleled biodiversity. 
+        Our wildlife-rich archipelago is a treasure trove of natural wonders, from the enchanting rainforests to the vibrant coral reefs.
+    </p>
+    <p style="font-weight: bold; font-size: 1.2em;">
+        Discover the Extraordinary Fauna: Immerse yourself in the captivating world of Philippine wildlife. Meet unique species like the Philippine Eagle, the Tarsier, and a kaleidoscope of colorful marine life. Each creature has a story to tell, and we're here to unveil their secrets.
+    </p>
+    <p style="font-weight: bold; font-size: 1.2em;">
+        Explore Conservation Efforts: Join us in the ongoing mission to preserve and protect our natural heritage. Learn about conservation initiatives, wildlife sanctuaries, and the dedicated individuals working tirelessly to ensure a sustainable future for the diverse flora and fauna that call the Philippines home.
+    </p>
+    <p style="font-weight: bold; font-size: 1.2em;">
+        Let's embark on a journey of discovery, appreciation, and conservation. Welcome to Mosaic of Life v.2, your gateway to the breathtaking world of Philippine wildlife!
+    </p>
+
+    <br><br><br><br><br>
+     <a href="map.html" class="styled-button">
+    <img src="BEGIN BUTTON.png" alt="Button Image">
+</main>
+
+    <br><br><br><br>
+
+</html>
+</body>

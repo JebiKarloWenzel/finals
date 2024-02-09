@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px; /* Add some top margin to the button container */
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 450px;
+      height: 450px;
+      margin-right: 20px; /* Adjust the spacing between buttons */
+      border: 2px solid #000; /* Add a border color */
+      border-radius: 10px; /* Add border-radius for rounded corners */
+      overflow: hidden; /* Hide overflow for border-radius */
+      transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+      background-color: #000; /* Set background color */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Add a subtle box shadow */
+    }
+
+    .button:hover {
+      transform: scale(1.2); /* Enlarge the button on hover */
+    }
+
+    .button img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 8px; /* Add border-radius for rounded image corners */
+    }
+
+    .creators-header {
+      position: absolute; /* Set the position to absolute */
+      bottom: -60px; /* Adjust the distance from the bottom */
+      font-size: 50px;
+    }
+
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999; /* Set a higher z-index to ensure the pop-up is on top */
+    }
+
+    .popup-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 80%;
+      max-height: 80%;
+      overflow: auto;
+      position: relative;
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="LOGO NAVIGATOR.png" alt="Logo">
+    </div> 
+    <div class="navbar-buttons">
+            <a href="HOME.HTML" class="navbar-button">HOME</a>
+            <a href="CREATORS.HTML" class="navbar-button">CREATORS</a>
+            <a href="SUPPORT.html" class="navbar-button">SUPPORT</a>
+            <a href="REFERENCES.html" class="navbar-button">REFERENCES</a>
+        </div>
+  </div>
+
+  <div class="button-container">
+    <div class="button" onclick="showPopup('Hello I am Jose Karlo Toledo!', 'Pleasure to see you here learning through our website')">
+      <img src="karlo.jpg" alt="Button 1">
+    </div>
+
+    <div class="button" onclick="showPopup('Hello I am Wenzel Magpantay!', 'Pleasure to see you here learning through our website')">
+      <img src="wenzel.jpg" alt="Button 2">
+    </div>
+
+    <div class="button" onclick="showPopup('Hello I am John Vincent Lorenzana!', 'Pleasure to see you here learning through our website')">
+      <img src="JEBI.jpg" alt="Button 3">
+    </div>
+  </div>
+
+  <div class="creators-header">
+    <p style="color: #000000;">CREATORS</p>
+  </div>
+
+  <!-- Popup HTML -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <span class="popup-close" onclick="hidePopup()">&times;</span>
+      <div id="popupContent"></div>
+    </div>
+  </div>
+
+  <script>
+    function showPopup(title, content) {
+      // Display the overlay
+      document.getElementById('popupOverlay').style.display = 'flex';
+
+      // Set the title and content in the popup
+      document.getElementById('popupContent').innerHTML = `<h2>${title}</h2><p>${content}</p>`;
+    }
+
+    function hidePopup() {
+      // Hide the overlay
+      document.getElementById('popupOverlay').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

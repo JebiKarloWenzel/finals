@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Information</title>
+    <style>
+        /* Add your CSS styles here */
+        #animalInfo {
+            display: none;
+            /* Add any additional styles as needed */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Add an image or map that users can click on -->
+<img src="path/to/your/image.jpg" alt="Animal Map" id="animalMap" onclick="showAnimalInfo()">
+
+<!-- Display information about the selected animal -->
+<div id="animalInfo">
+    <h2>Animal Information</h2>
+    <p id="animalName"></p>
+    <p id="animalDescription"></p>
+    <!-- Add more details as needed -->
+</div>
+
+<script>
+    // JavaScript to handle the click event and display information
+    function showAnimalInfo() {
+        // Get the elements
+        var animalInfoDiv = document.getElementById("animalInfo");
+        var animalNameParagraph = document.getElementById("animalName");
+        var animalDescriptionParagraph = document.getElementById("animalDescription");
+
+        // Example data (replace with your actual data)
+        var selectedAnimal = {
+            name: "Lion",
+            description: "Lions are large carnivorous mammals that belong to the cat family. They are known for their distinctive manes and are often referred to as 'king of the jungle.'"
+            // Add more data fields as needed
+        };
+
+        // Update the content with the selected animal's information
+        animalNameParagraph.textContent = "Name: " + selectedAnimal.name;
+        animalDescriptionParagraph.textContent = "Description: " + selectedAnimal.description;
+
+        // Show the animal information div
+        animalInfoDiv.style.display = "block";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="navbar">
+    <div class="navbar-logo">
+      <img src="LOGO NAVIGATOR.png" alt="Logo">
+    </div> 
+    <div class="navbar-buttons">
+            <a href="HOME.HTML" class="navbar-button">HOME</a>
+            <a href="CREATORS.HTML" class="navbar-button">CREATORS</a>
+            <a href="SUPPORT.html" class="navbar-button">SUPPORT</a>
+            <a href="REFERENCES.html" class="navbar-button">REFERENCES</a>
+        </div>
+  </div>
+
+    <br><br><br><br>
+     <div class="container">
+        <div class="header">
+            <h1 style="color: #000000;">MAP OF THE PHILIPPINES</h1>
+        </div>
+
+        <br><br><br><br>
+        
+        <div id="popup-container" class="popup">
+    <div id="popup-content">
+        <span class="popup-close" onclick="closePopup()">&times;</span>
+        <h2 id="popup-title">Area Title</h2>
+        <p id="popup-text">Area information goes here.</p>
+        <img id="popup-image" src="" alt="Popup Image">
+    </div>
+</div>
+
+
+    <!-- Add this script section in your head to include the JavaScript functions -->
+<script>
+    function openPopup(title, text, imageUrl) {
+        document.getElementById("popup-title").innerHTML = title;
+        document.getElementById("popup-text").innerHTML = text;
+        document.getElementById("popup-image").src = imageUrl;
+        document.getElementById("popup-container").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup-container").style.display = "none";
+    }
+</script>
+
+<!-- Add this modified HTML for your image map -->
+<div class="map-container" align="center">
+    <img src="C:\Users\Admin\Documents\MOSAIC OF LIFE MIDTERMS\PH MAP.png" usemap="#image-map">
+    <map name="image-map">
+      
+      <area target="" alt="Leyte" title="Leyte" onclick="openPopup('Leyte', 'Name: Philippine Forest Turtle (Leyte)<br><br>\
+<b>Scientific Name:</b> Siebenrockiella leytensis<br>\
+<b>Description:</b> The Philippine Forest Turtle, also known as the Leyte Pond turtle, is a critically endangered species of turtle endemic to the Philippines. This small freshwater turtle is primarily found on the islands of Leyte and Samar in the central Philippines. It inhabits lowland and montane forests, as well as nearby freshwater streams and ponds.<br>\
+<b>Size:</b> The Philippine Forest Turtle is a relatively small turtle, with a carapace (upper shell) length of about 15 to 20 centimeters. It has a dark brown to blackish shell with a slightly serrated posterior edge. The skin is typically dark with yellowish markings.<br>\
+<b>Habitat:</b> This species is associated with freshwater habitats in and around forests, including streams, ponds, and marshy areas. It spends a significant amount of time in the water but also ventures onto land.<br>\
+<b>Diet:</b> The diet of the Philippine Forest Turtle consists of various invertebrates, small aquatic animals, and plant matter.<br>\
+<b>Conservation Status:</b> The Philippine Forest Turtle is listed as critically endangered by the International Union for Conservation of Nature (IUCN). It faces significant threats, including habitat loss due to deforestation, collection for the pet trade, and potential predation by introduced species.<br>\
+<b>Conservation Efforts:</b> Conservation efforts are underway to protect and conserve this species. These include habitat preservation, captive breeding programs, and educational initiatives to raise awareness about the importance of conserving the Philippine Forest Turtle.<br>\
+<b>Unique to Leyte and Samar:</b> The Philippine Forest Turtle is unique to the Philippines, specifically to the islands of Leyte and Samar. Its restricted range makes it particularly vulnerable to localized threats.<br>\
+<b>Ongoing Conservation:</b> Conservation organizations and local authorities are working to monitor and safeguard the remaining populations of the Philippine Forest Turtle to ensure the survival of this critically endangered species. The ongoing conservation efforts emphasize the need for habitat preservation, anti-poaching measures, and community involvement to protect these turtles and their ecosystems.', 'LEYTE TURTLE.jpg')" coords="350,257,357,281,366,258" shape="poly">
+
+        <area target="" alt="Bohol" title="Bohol" onclick="openPopup('Bohol', 'Name: Philippine Flying Lemur (Bohol)<br><br>\
+<b>Scientific Name:</b> Cynocephalus volans<br>\
+The Philippine Flying Lemur is not actually a lemur, and it is more commonly referred to as the Philippine Flying Lemur or the Philippine Colugo. It belongs to the order Dermoptera and is the only extant species within this order. Despite its name, the Philippine Flying Lemur is not closely related to true lemurs, which are primates found in Madagascar.<br>\
+<b>Distinctive Features:</b> The Philippine Flying Lemur has a distinctive appearance with a large, gliding membrane, called a patagium, that extends between its limbs and tail. This adaptation allows it to glide effortlessly through the air. Its body is covered in dense fur, which is usually gray or brown, providing it with camouflage in its natural habitat. It has large, round eyes and a flattened face.<br>\
+<b>Habitat:</b> The Philippine Flying Lemur is native to the Philippines and can be found in various forested habitats, including primary and secondary forests. It is arboreal and spends most of its life in trees. Its gliding ability helps it move efficiently between trees in search of food. The diet of the Philippine Flying Lemur primarily consists of leaves, fruits, and sometimes insects. These animals are primarily nocturnal, being more active during the night. They are solitary creatures and are known for their quiet and elusive nature. Female Philippine Flying Lemurs give birth to a single offspring at a time. The young are born relatively undeveloped and require significant maternal care.<br>\
+<b>Conservation Status:</b> The conservation status of the Philippine Flying Lemur is classified as Near Threatened by the International Union for Conservation of Nature (IUCN). The main threats include habitat loss due to deforestation and hunting.<br>\
+<b>Origin and Distribution:</b> In terms of its origin, the Philippine Flying Lemur is believed to have originated in the Philippines. Its distribution is limited to the islands of the Philippines, including Luzon, Mindanao, Leyte, Samar, and surrounding smaller islands. The species has adapted to the diverse forested environments found across these islands. Despite being called a flying lemur, it is important to note that it is not a lemur and has a unique evolutionary history within the order Dermoptera.', 'LEMUR BOHOL.jpg')" coords="327,297,334,320,345,299" shape="poly">
+
+       <area target="" alt="Negros" title="Negros" onclick="openPopup('Negros', 'Name: Visayan Spotted Deer (Negros)<br><br>\
+<b>Scientific Name:</b> Rusa alfredi<br>\
+The Visayan spotted deer, also known as the Philippine spotted deer, is a species of deer native to the Visayan islands in the Philippines. Its range historically included the islands of Negros, Panay, and possibly Masbate, where it inhabited the dense forests. The Visayan spotted deer is native to the Visayan islands in the central Philippines.<br>\
+<b>Description:</b> The Visayan spotted deer is a small to medium-sized deer with a distinct coat pattern of white spots on a dark brown background. Adult males typically have antlers, while females are usually smaller and lack antlers. The species is primarily found in the dense and tropical rainforests of the Visayan islands, which include Negros, Panay, and possibly Masbate.<br>\
+<b>Conservation Status:</b> The Visayan spotted deer is listed as Endangered on the International Union for Conservation of Nature (IUCN) Red List. The main threats to its population include habitat loss due to deforestation, hunting, and fragmentation of its natural habitat. The population of the Visayan spotted deer has significantly declined over the years, and conservation efforts are ongoing to protect and preserve the remaining individuals.<br>\
+<b>Conservation Initiatives:</b> Various conservation initiatives are in place to save the Visayan spotted deer from extinction. These efforts include habitat protection, captive breeding programs, and community involvement in conservation activities. The Visayan spotted deer plays a crucial role in the ecosystem as a herbivore, contributing to seed dispersal and influencing vegetation dynamics in its habitat.<br>\
+<b>Captive Breeding:</b> Captive breeding programs have been established to help increase the population of the Visayan spotted deer in a controlled environment. These programs aim to eventually reintroduce individuals into their natural habitat.<br>\
+<b>Collaborative Conservation:</b> Conservation organizations and local authorities are working together to address the challenges faced by the Visayan spotted deer and ensure the long-term survival of this species in the wild.', 'NEGROS DEER.jpg')" coords="285,297,292,318,302,298" shape="poly">
+
+        <area target="" alt="Cebu" title="Cebu" onclick="openPopup('Cebu', 'Name: Whale Shark (Cebu)<br><br>\
+<b>Scientific Name:</b> Rhincodon typus<br>\
+The whale shark is the largest known extant fish species and is known for its impressive size and distinctive spotted pattern. Whale sharks are the largest fish in the world, with adults reaching lengths of up to 40 feet (12 meters) or more. They have a unique spotted pattern on their skin, and their mouths can be up to 1.5 meters wide. Despite their large size, they are filter feeders, primarily consuming plankton and small fish.<br>\
+<b>Habitat:</b> Whale sharks are found in warm tropical and subtropical waters around the globe. They can be seen in open oceans, near coastlines, and around coral reefs. Whale sharks are known for their long-distance migrations. While they may cover large distances, some individuals are known to return to specific locations regularly.<br>\
+<b>Conservation Status:</b> The whale shark is listed as a vulnerable species by the International Union for Conservation of Nature (IUCN) due to threats like habitat loss, ship strikes, and fisheries. The Philippines is one of the countries where whale sharks are commonly spotted. Oslob, located in the southern part of Cebu, is particularly famous for its whale shark interactions. In Oslob, local fishermen started feeding whale sharks in the early 2010s, attracting them to the area. Tourists are allowed to snorkel and swim with these gentle giants under regulated conditions. Other locations in the Philippines, such as Donsol in Sorsogon and Tubbataha Reefs Natural Park, are also known for whale shark sightings.<br>\
+<b>Conservation Efforts:</b> Conservation efforts in the Philippines aim to balance the tourism industrys interest in whale sharks with the need to protect these creatures. Regulations are in place to ensure responsible and sustainable tourism practices. Educational programs also help raise awareness about the importance of conserving whale sharks and their habitats.', 'WHALE SHARK CEBU.jpg')" coords="315,275,324,296,331,276" shape="poly">
+
+        <area target="" alt="Central Visayas" title="Central Visayas" onclick="openPopup('Central Visayas', 'Name: Visayan Warty Pig (Central Visayas)<br><br>\
+<b>Scientific Name:</b> Sus cebifrons<br>\
+The Visayan Warty Pig is a critically endangered species of pig native to the Visayan Islands in the Philippines. They are relatively small, with a length of about 60 to 80 centimeters and a shoulder height of 40 to 50 centimeters. Adult pigs typically weigh between 20 to 27 kilograms. They have a distinctive appearance with warts on their faces, which are more prominent in males. The warts are fleshy protuberances that hang from both sides of their snouts. The pigs have a bristly coat that can range in color from dark brown to black.<br>\
+<b>Habitat:</b> The Visayan warty pig is found in the Visayan Islands of the central Philippines, including the islands of Panay, Negros, Cebu, and some smaller surrounding islands. They inhabit a variety of forest types, from lowland rainforests to montane forests. Visayan warty pigs are omnivores and feed on a variety of food items, including roots, fruits, and small animals. They are known to form small family groups, with one or more adults and their offspring.<br>\
+<b>Conservation Status:</b> The Visayan warty pig is classified as critically endangered by the International Union for Conservation of Nature (IUCN). The main threats to their survival include habitat loss due to deforestation, hunting, and limited genetic diversity within the remaining populations. Various conservation efforts are underway to protect the remaining populations of Visayan warty pigs. These efforts include habitat preservation, captive breeding programs, and community-based conservation initiatives.<br>\
+<b>Cultural Significance:</b> In some indigenous cultures in the Visayan Islands, the Visayan warty pig holds cultural significance. They are sometimes featured in local folklore and traditional practices. The Visayan warty pigs critically endangered status emphasizes the importance of conservation efforts to ensure the survival of this unique and threatened species. Efforts to protect their habitats and establish captive breeding programs are crucial in preventing their extinction.', ' VISAYAN WARTY PIG.jpg')" coords="289,275,295,295,303,275" shape="poly">
+
+        <area target="" alt="Panay" title="Panay" onclick="openPopup('Panay', 'Name: Walden’s Hornbill (Panay)<br><br>\
+<b>Scientific Name:</b> Rhabdotorrhinus waldeni<br>\
+Waldens hornbill, locally called dulungan, also known as the Visayan wrinkled hornbill, rufous-headed hornbill, or writhed-billed hornbill, is a critically endangered species of hornbill living in the rainforests on the islands of Negros and Panay in the Philippines. It is closely related to the writhed hornbill but can be recognized by the yellow throat and ocular skin in the male, and the blue throat and ocular skin in the female (both throat and ocular skin are deep orange or red in both sexes of the writhed hornbill). Its binomial name commemorates the Scottish ornithologist, Viscount Walden.<br>\
+<b>Habitat:</b> Waldens hornbill inhabits the rainforests on the islands of Negros and Panay in the Philippines.<br>\
+<b>Distinctive Features:</b> It is closely related to the writhed hornbill but can be recognized by the yellow throat and ocular skin in the male, and the blue throat and ocular skin in the female (both throat and ocular skin are deep orange or red in both sexes of the writhed hornbill).<br>\
+<b>Binomial Name:</b> Its binomial name commemorates the Scottish ornithologist, Viscount Walden.<br>\
+', 'PANAY HORNBILL.jpg')" coords="270,250,278,272,286,251" shape="poly">
+
+       <area target="" alt="Central Philippines" title="Central Philippines" onclick="openPopup('Central Philippines', 'Name: Philippine Eagle Owl (Central Philippines)<br><br>\
+<b>Scientific Name:</b> Bubo philippensis<br>\
+There is an owl species in the Philippines called the Philippine Eagle Owl. The Philippine Eagle Owl belongs to the family Strigidae and the genus Bubo.<br>\
+<b>Description:</b> The Philippine Eagle Owl is a large owl species, with a wingspan of about 106-190 cm (42-75 inches). It typically has a dark brown plumage with white markings and prominent ear tufts. The Philippine Eagle Owl is found in various forested habitats, including primary and secondary forests. It can be located in lowland and montane forests. The species is endemic to the Philippines, meaning it is found nowhere else in the world. Its range includes various islands across the archipelago. Like many owl species, the Philippine Eagle Owl is nocturnal, meaning it is most active during the night. It hunts small mammals, birds, and other prey in the darkness.<br>\
+<b>Origin and Endemism:</b> Regarding its origin in the Philippines, the Philippine Eagle Owl is native to the country. It is part of the unique biodiversity found in the Philippines, which is known for its high number of endemic species. These owls are adapted to the specific environmental conditions present in the archipelago.', 'CENTRAL PH OWL.jpg')" coords="287,221,296,248,302,221" shape="poly">
+
+        <area target="" alt="Palawan" title="Palawan" onclick="openPopup('Palawan', 'Name: Asian Small-Clawed Otter (Palawan)<br><br>\
+<b>Scientific Name:</b> Aonyx cinereus<br>\
+The Asian Small-Clawed Otter is the smallest of all otter species and is characterized by its small, agile claws that do not extend beyond the fleshy pads of its partially webbed fingers and toes. Here are some details about the Asian Small-Clawed Otter and its connection to the Philippines.<br>\
+<b>Size:</b> Adult Asian Small-Clawed Otter typically weigh between 2 to 5 kilograms (4.4 to 11 pounds). They have a sleek, dark brown coat with a lighter underside. Their fur is dense and water-resistant. The most distinctive feature is their small claws, which give them a high degree of manual dexterity.<br>\
+<b>Habitat:</b> Asian Small-Clawed Otters are primarily found in freshwater habitats such as rivers, mangroves, and swamps. They are native to various regions in Southeast Asia, including parts of India, China, Indonesia, the Philippines, and other neighboring countries.<br>\
+<b>Social Behavior:</b> These otters are highly social animals and live in extended family groups. They are known for their vocalizations and cooperative hunting and foraging behaviors. Their diet consists mainly of small aquatic animals such as fish, crabs, and mollusks.<br>\
+<b>Conservation Status:</b> The Asian Small-Clawed Otter is listed as Vulnerable on the International Union for Conservation of Nature (IUCN) Red List. Threats to their populations include habitat loss, pollution, and illegal pet trade.<br>\
+<b>Philippines Habitat:</b> In the Philippines, they can be found in freshwater habitats like rivers, streams, and mangroves. Conservation initiatives are underway to protect the Asian Small-Clawed Otter and its habitat in different countries, including the Philippines. These efforts include habitat conservation, anti-poaching measures, and public awareness campaigns to discourage the illegal pet trade. Its important to note that while the Asian Small-Clawed Otter is native to the Philippines, its populations in the wild face various threats, emphasizing the need for conservation measures to ensure their survival in their natural habitats.', 'OTTER PALAWAN.jpg')" coords="127,309,134,332,145,309" shape="poly">
+
+        <area target="" alt="Mindoro" title="Mindoro" onclick="openPopup('Mindoro', 'Name: Philippine Crocodile (Mindoro)<br><br>\
+    <b>Scientific Name:</b> Crocodylus mindorensis<br>\
+    <b>Description:</b> The Philippine Crocodile is a species of crocodile that is native to the Philippines. It is one of the two crocodile species found in the country, the other being the saltwater crocodile (Crocodylus porosus). The Philippine crocodile is a freshwater species and is typically found in slow-moving rivers, marshes, and lakes on the Philippine islands.<br>\
+    <b>Size:</b> Adult Philippine crocodiles are relatively small compared to some other crocodile species. They typically grow to a length of about 2 to 3 meters (6.6 to 9.8 feet), with males being slightly larger than females.<br>\
+    <b>Appearance:</b> These crocodiles have a broad snout and a bony crest behind their eyes. They have a dark olive to brownish coloration with black bands on their body and tail. The banded pattern provides effective camouflage in their natural habitat.<br>\
+    <b>Habitat and Diet:</b> Philippine crocodiles are mainly found in freshwater habitats such as rivers, lakes, and marshes. They prefer areas with dense vegetation and cover where they can hide and ambush prey. Their diet consists of a variety of prey, including fish, crustaceans, amphibians, and small mammals. As they grow, larger individuals may also consume larger prey.<br>\
+    <b>Conservation Status:</b> The Philippine crocodile is listed as a critically endangered species by the International Union for Conservation of Nature (IUCN). The population has significantly declined due to habitat loss, hunting, and other human activities. Conservation efforts are in place to protect and preserve the remaining populations of this species. Various conservation initiatives have been implemented to save the Philippine crocodile from extinction. These efforts include habitat protection, captive breeding programs, and community involvement to raise awareness and promote the conservation of this endangered species.<br>\
+    <b>Importance and Conservation:</b> The Philippine Crocodile is an important part of the country\'s biodiversity, and conservation efforts are crucial to ensuring its survival in the wild. Efforts are ongoing to address the threats it faces and to promote the coexistence of this species with local communities.', 'CROC MINDANAO.jpg')" coords="217,185,225,207,232,185" shape="poly">
+
+        <area target="" alt="Catanduanes" title="Catanduanes" onclick="openPopup('Catanduanes', 'Name: Gray’s Monitor (Catanduanes)<br><br>\
+<b>Scientific Name:</b> Varanus olivaceus<br>\
+The Grays monitor is a large lizard, measuring 180 cm and weighing over 9 kg. It is known only from lowland dipterocarp forest in southern Luzon, Catanduanes, and Polillo Island, all islands in the Philippines. It is also known as Grays monitor lizard, butaan, and ornate monitor. It belongs to the subgenus Philippinosaurus. The species is largely arboreal and extremely shy. The Northern Sierra Madre monitor lizard was thought to be of the same species as Grays monitor until research concluded in 2010 that the northern populations of Grays monitor were a distinct species, now known as V. bitatawa.<br>\
+<b>Habitat:</b> The Grays monitor is known from lowland dipterocarp forests in southern Luzon, Catanduanes, and Polillo Island. It is largely arboreal and is characterized by its shyness.<br>\
+<b>Distinctive Features:</b> This monitor lizard is notable for its large size, reaching 180 cm in length and weighing over 9 kg. It is also known as Grays monitor lizard, butaan, and ornate monitor. It belongs to the subgenus Philippinosaurus.<br>\
+<b>Research Discovery:</b> The Northern Sierra Madre monitor lizard was initially thought to be of the same species as Grays monitor until a research study concluded in 2010, determining that the northern populations of Grays monitor were a distinct species, now known as V. bitatawa.<br>\
+', 'GRAY MONITOR CATANDUANES.jpg')" coords="329,156,343,156,338,182" shape="poly">
+
+    </map>
+</div>
+</body>
+</html>
